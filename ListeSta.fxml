@@ -51,8 +51,8 @@
          <children>
             <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#AjoutStage" prefHeight="53.0" prefWidth="124.0" style="-fx-background-color: transparent;" text="Ajouter Stage" />
             <Button layoutX="10.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#ListeStage" prefHeight="53.0" prefWidth="124.0" style="-fx-background-color: transparent;" text="Liste Stage" />
-            <Button layoutX="10.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#ListeStage" prefHeight="53.0" prefWidth="124.0" style="-fx-background-color: transparent;" text="Aide" />
-            <Button layoutX="10.0" layoutY="117.0" mnemonicParsing="false" onMouseClicked="#ListeStage" prefHeight="53.0" prefWidth="124.0" style="-fx-background-color: transparent;" text="Quit" />
+            <Button layoutX="10.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#Aide" prefHeight="53.0" prefWidth="124.0" style="-fx-background-color: transparent;" text="Aide" />
+            <Button layoutX="10.0" layoutY="117.0" mnemonicParsing="false" onMouseClicked="#Quitter" prefHeight="53.0" prefWidth="124.0" style="-fx-background-color: transparent;" text="Quit" />
          </children>
       </VBox>
    </left>
