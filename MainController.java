@@ -1,4 +1,5 @@
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.application.Application;
 import javafx.scene.control.Label;
