@@ -45,21 +45,21 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main">
    <left>
       <VBox prefHeight="292.0" prefWidth="120.0" style="-fx-background-color: #FFB6C1;" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#AjoutStage" prefHeight="53.0" prefWidth="124.0" style="-fx-background-color: transparent;" text="Ajouter Stage" />
-            <Button layoutX="10.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#ListeStage" prefHeight="53.0" prefWidth="124.0" style="-fx-background-color: transparent;" text="Liste Stage" />
-            <Button layoutX="10.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#Aide" prefHeight="53.0" prefWidth="124.0" style="-fx-background-color: transparent;" text="Aide" />
-            <Button layoutX="10.0" layoutY="117.0" mnemonicParsing="false" onMouseClicked="#Quitter" prefHeight="53.0" prefWidth="124.0" style="-fx-background-color: transparent;" text="Quit" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#AjoutStage" prefHeight="53.0" prefWidth="124.0" text="Ajouter Stage" />
+            <Button layoutX="10.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#ListeStage" prefHeight="53.0" prefWidth="124.0" text="Liste Stage" />
+            <Button layoutX="10.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#ListeStage" prefHeight="53.0" prefWidth="124.0" text="Aide" />
+            <Button layoutX="10.0" layoutY="117.0" mnemonicParsing="false" onMouseClicked="#ListeStage" prefHeight="53.0" prefWidth="124.0" text="Quit" />
          </children>
       </VBox>
    </left>
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F00000;" BorderPane.alignment="CENTER">
          <children>
-            <TextField layoutX="14.0" layoutY="14.0" text="Portail stage Gphy" />
+            <TextField layoutX="14.0" layoutY="14.0" text="Offre de stage" />
             <MenuBar layoutX="14.0" layoutY="49.0">
               <menus>
                 <Menu mnemonicParsing="false" text="Filtre">
@@ -72,7 +72,7 @@
                 </Menu>
               </menus>
             </MenuBar>
-            <TableView layoutX="10.0" layoutY="85.0" prefHeight="200.0" prefWidth="460.0" style="-fx-background-color: transparent;">
+            <TableView layoutY="85.0" prefHeight="200.0" prefWidth="460.0" style="-fx-background-color: transparent;">
               <columns>
                 <TableColumn prefWidth="75.0" text="Structure" />
                 <TableColumn prefWidth="75.0" text="Sujet" />
@@ -88,7 +88,7 @@
       <Pane prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <TextField layoutX="126.0" layoutY="16.0" text="Portail stage Gphy" />
-            <ImageView fitHeight="52.0" fitWidth="77.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="48.0" fitWidth="77.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </Pane>
    </top>
