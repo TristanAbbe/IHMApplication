@@ -35,30 +35,73 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXDrawer?>
 <?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <BorderPane prefHeight="478.0" prefWidth="706.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <left>
-            <JFXDrawer prefHeight="422.0" prefWidth="128.0" BorderPane.alignment="CENTER">
+            <JFXDrawer prefHeight="422.0" prefWidth="128.0" style="-fx-background-color: #E5D0F1;" BorderPane.alignment="CENTER">
                <children>
                   <VBox prefHeight="422.0" prefWidth="124.0">
                      <children>
-                        <JFXButton prefHeight="86.0" prefWidth="147.0" />
+                        <JFXButton prefHeight="86.0" prefWidth="147.0" style="-fx-border-color: #a484b6; -fx-border-width: 1;" text="Ajouter un stage" textFill="#4c2456">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton prefHeight="86.0" prefWidth="147.0" style="-fx-border-color: #a484b6; -fx-border-width: 1;" text="Liste des stages" textFill="#4c2456">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton prefHeight="48.0" prefWidth="128.0" style="-fx-border-color: #a484b6; -fx-border-width: 1;" text="Aide" textFill="#4c2456">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton prefHeight="48.0" prefWidth="128.0" style="-fx-border-color: #a484b6; -fx-border-width: 1;" text="Quitter" textFill="#4c2456">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
                      </children>
                   </VBox>
                </children>
             </JFXDrawer>
          </left>
          <top>
-            <Pane prefHeight="106.0" prefWidth="782.0" style="-fx-background-color: #D0AAE7;" BorderPane.alignment="CENTER">
+            <Pane prefHeight="73.0" prefWidth="782.0" style="-fx-background-color: #C396DE;" BorderPane.alignment="CENTER">
                <children>
-                  <JFXHamburger layoutX="130.0" layoutY="72.0" />
+                  <JFXHamburger layoutX="748.0" layoutY="46.0" prefHeight="15.0" prefWidth="20.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXHamburger>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="29.0" prefWidth="295.0" text="Portail Stages GPhy">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
                </children>
             </Pane>
          </top>
