@@ -2,10 +2,30 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="161.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="124.0" style="-fx-background-color: #E5D0F1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <JFXButton />
+      <JFXButton prefHeight="86.0" prefWidth="147.0" style="-fx-border-color: #a484b6;" text="Ajouter un stage" textFill="#4c2456">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton prefHeight="86.0" prefWidth="147.0" style="-fx-border-color: #a484b6;" text="Liste des stages" textFill="#4c2456">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton prefHeight="50.0" prefWidth="124.0" style="-fx-border-color: #a484b6;" text="Aide" textFill="#4c2456">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton prefHeight="50.0" prefWidth="124.0" style="-fx-border-color: #a484b6;" text="Quitter" textFill="#4c2456">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
    </children>
 </VBox>
