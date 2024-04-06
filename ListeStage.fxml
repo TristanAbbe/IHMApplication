@@ -89,12 +89,12 @@
                <center>
                   <JFXTreeTableView BorderPane.alignment="CENTER">
                      <columns>
-                        <TreeTableColumn prefWidth="94.4000244140625" text="Structure" />
-                        <TreeTableColumn prefWidth="89.59999084472656" text="Sujet" />
-                        <TreeTableColumn prefWidth="107.20001220703125" text="Mois début" />
-                        <TreeTableColumn prefWidth="88.0" text="Dure totale" />
-                        <TreeTableColumn minWidth="0.0" prefWidth="95.2000732421875" text="Promotion" />
-                        <TreeTableColumn minWidth="0.0" prefWidth="95.2000732421875" text="Promotion" />
+                        <TreeTableColumn prefWidth="132.00001525878906" text="Structure" />
+                        <TreeTableColumn prefWidth="162.4000244140625" text="Sujet" />
+                        <TreeTableColumn prefWidth="92.79998779296875" text="Mois début" />
+                        <TreeTableColumn prefWidth="89.60009765625" text="Durée totale" />
+                        <TreeTableColumn minWidth="0.0" prefWidth="81.5999755859375" text="Promotion" />
+                        <TreeTableColumn minWidth="0.0" prefWidth="95.2000732421875" text="Modification" />
                      </columns>
                   </JFXTreeTableView>
                </center>
