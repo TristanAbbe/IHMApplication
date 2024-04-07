@@ -35,13 +35,17 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXDrawer?>
 <?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
@@ -81,22 +85,47 @@
                   </AnchorPane>
                </top>
                <bottom>
-                  <AnchorPane prefHeight="61.0" prefWidth="654.0" BorderPane.alignment="CENTER">
+                  <AnchorPane prefHeight="94.0" prefWidth="654.0" BorderPane.alignment="CENTER">
                      <children>
-                        <JFXButton layoutX="483.0" layoutY="14.0" />
-                        <JFXButton layoutX="337.0" layoutY="14.0" />
+                        <JFXButton layoutX="363.0" layoutY="17.0" prefHeight="44.0" prefWidth="106.0" style="-fx-background-color: #aa7bc7;" text="Annuler" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font></JFXButton>
+                        <JFXButton layoutX="508.0" layoutY="17.0" prefHeight="44.0" prefWidth="106.0" style="-fx-background-color: #8446a9;" text="Enregistrer" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </JFXButton>
                      </children>
                   </AnchorPane>
                </bottom>
                <center>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                      <children>
-                        <TextArea layoutX="14.0" layoutY="84.0" prefHeight="200.0" prefWidth="225.0" />
-                        <TextField layoutX="14.0" layoutY="32.0" prefHeight="26.0" prefWidth="225.0" />
+                        <TextArea layoutX="14.0" layoutY="84.0" prefHeight="228.0" prefWidth="278.0" />
+                        <TextField layoutX="14.0" layoutY="32.0" prefHeight="26.0" prefWidth="277.0" />
                         <Label layoutX="14.0" layoutY="14.0" text="Nom de la structure" />
                         <Label layoutX="14.0" layoutY="66.0" text="Sujet du stage" />
                         <ChoiceBox layoutX="351.0" layoutY="32.0" prefWidth="150.0" />
                         <Label layoutX="351.0" layoutY="14.0" text="Date de début de stage" />
+                        <Label layoutX="351.0" layoutY="66.0" text="Durée du stage" />
+                        <TextField layoutX="351.0" layoutY="84.0" prefHeight="26.0" prefWidth="58.0" />
+                        <ChoiceBox layoutX="351.0" layoutY="139.0" prefWidth="150.0" />
+                        <Label layoutX="351.0" layoutY="118.0" text="Promotion du stagiaire" />
+                        <HBox layoutX="426.0" layoutY="85.0" prefHeight="24.0" prefWidth="197.0" spacing="10.0">
+                           <children>
+                              <RadioButton mnemonicParsing="false" selected="true" text="Jours">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="duree" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton mnemonicParsing="false" text="Semaines" toggleGroup="$duree" />
+                              <RadioButton mnemonicParsing="false" text="Mois" toggleGroup="$duree" />
+                           </children>
+                           <padding>
+                              <Insets top="3.0" />
+                           </padding>
+                        </HBox>
                      </children>
                   </AnchorPane>
                </center>
